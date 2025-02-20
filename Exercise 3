@@ -1,0 +1,19 @@
+
+DECLARE 
+v_PI CONSTANT NUMBER :=22.3;
+diameter NUMBER;
+circumference NUMBER;
+area NUMBER;
+radius NUMBER;
+
+BEGIN
+radius:=&r_radius;
+diameter:=radius *2;
+circumference:=diameter*v_PI;
+area:=(radius*radius)*v_PI;
+
+DBMS_OUTPUT.PUT_LINE('Diameter :'||diameter );
+DBMS_OUTPUT.PUT_LINE('Circumference :'||circumference );
+DBMS_OUTPUT.PUT_LINE('Area :'||area );
+END;
+/
